@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semesta Medika Makmur - Leading Medical Equipment Provider</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'medical': {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #0c4a6e 0%, #0284c7 50%, #0ea5e9 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #0ea5e9;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            background-color: #0ea5e9;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .section-padding {
+            padding: 80px 0;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #0284c7, #0ea5e9);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 20px rgba(2, 132, 199, 0.3);
+        }
+        
+        .btn-secondary {
+            border: 2px solid #0ea5e9;
+            color: #0ea5e9;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background: #0ea5e9;
+            color: white;
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center">
+                        <img src="logo-baru-banget (2).png" alt="Company Logo" class="h-full w-full object-contain p-2">
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-medical-800">Semesta Medika Makmur</h1>
+                        <p class="text-sm text-medical-600">Medical Equipment Excellence</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link font-medium">Home</a>
+                    <a href="#about" class="nav-link font-medium">About</a>
+                    <a href="#products" class="nav-link font-medium">Products</a>
+                    <a href="#services" class="nav-link font-medium">Services</a>
+                    <a href="#contact" class="nav-link font-medium">Contact</a>
+                    <a href="https://wads-frontend-alpha.vercel.app/" class="bg-medical-100 text-medical-700 px-4 py-2 rounded-lg font-medium hover:bg-medical-200 transition-colors">
+                        <i class="fas fa-headset mr-2"></i>Support
+                    </a>
+                    <a href="https://www.semestamedika.com/shop" class="btn-primary text-white px-6 py-2 rounded-lg font-medium">
+                        <i class="fas fa-shopping-cart mr-2"></i>Shop Now
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen hero-gradient relative overflow-hidden pt-20">
+        <div class="absolute inset-0 bg-black/10"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center min-h-screen py-20">
+                <div class="text-white">
+                    <h2 class="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
+                        Empowering Health with 
+                        <span class="text-cyan-200">Innovation</span>
+                    </h2>
+                    <p class="text-xl mb-10 text-blue-100 leading-relaxed max-w-lg">
+                        Indonesia's trusted partner for cutting-edge medical equipment, serving hospitals, homecare facilities, and healthcare institutions nationwide.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        <a href="#products" class="bg-white text-medical-700 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-all duration-300 inline-flex items-center justify-center group">
+                            <i class="fas fa-box-open mr-3 group-hover:scale-110 transition-transform"></i>
+                            Explore Products
+                        </a>
+                        <a href="https://www.semestamedika.com/shop" class="btn-secondary border-2 border-white text-white px-8 py-4 rounded-xl font-semibold inline-flex items-center justify-center">
+                            <i class="fas fa-shopping-cart mr-3"></i>
+                            Browse Catalog
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-white/20 backdrop-blur-sm rounded-3xl p-8 border border-white/30">
+                        <img src="Screenshot 2025-06-11 192831.jpg" 
+                             alt="Modern Medical Equipment" 
+                             class="w-full h-80 object-cover rounded-2xl shadow-2xl">
+                        
+                        <div class="grid grid-cols-3 gap-4 mt-8">
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                                    <i class="fas fa-certificate text-white text-xl"></i>
+                                </div>
+                                <p class="text-white font-semibold">ISO Certified</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                                    <i class="fas fa-truck text-white text-xl"></i>
+                                </div>
+                                <p class="text-white font-semibold">Fast Delivery</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                                    <i class="fas fa-tools text-white text-xl"></i>
+                                </div>
+                                <p class="text-white font-semibold">Expert Support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h3 class="text-4xl lg:text-5xl font-bold text-medical-800 mb-8">About Semesta Medika Makmur</h3>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        As Indonesia's premier medical equipment provider, we have established ourselves as the cornerstone of healthcare innovation. Our commitment to quality, service, and cutting-edge technology drives us to deliver solutions that transform healthcare environments.
+                    </p>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        From state-of-the-art hospital equipment to specialized homecare solutions, we bridge the gap between medical necessity and technological advancement, ensuring healthcare providers have access to the tools they need to save lives and improve patient outcomes.
+                    </p>
+                    
+                    <div class="bg-medical-600 text-white p-8 rounded-2xl mb-10 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
+                        <blockquote class="text-lg italic relative z-10">
+                            "Innovation in healthcare technology isn't just about advancing medicine—it's about advancing humanity's capacity to heal, care, and thrive."
+                        </blockquote>
+                        <cite class="block mt-4 text-cyan-200 font-semibold">— Our Mission Statement</cite>
+                    </div>
+                    
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+                            <div class="text-4xl font-bold text-medical-600 mb-2">3</div>
+                            <div class="text-sm text-gray-600 font-medium">Product Categories</div>
+                        </div>
+                        <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+                            <div class="text-4xl font-bold text-medical-600 mb-2">500+</div>
+                            <div class="text-sm text-gray-600 font-medium">Equipment Models</div>
+                        </div>
+                        <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+                            <div class="text-4xl font-bold text-medical-600 mb-2">24/7</div>
+                            <div class="text-sm text-gray-600 font-medium">Customer Support</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="space-y-6">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=250&fit=crop" 
+                             alt="Medical Technology Innovation" 
+                             class="w-full h-48 object-cover rounded-2xl shadow-lg card-hover">
+                        <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=300&h=250&fit=crop" 
+                             alt="Advanced Medical Equipment" 
+                             class="w-full h-64 object-cover rounded-2xl shadow-lg card-hover">
+                    </div>
+                    <div class="space-y-6 mt-8">
+                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=300&h=250&fit=crop" 
+                             alt="Healthcare Innovation Solutions" 
+                             class="w-full h-64 object-cover rounded-2xl shadow-lg card-hover">
+                        <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=300&h=250&fit=crop" 
+                             alt="Modern Hospital Environment" 
+                             class="w-full h-48 object-cover rounded-2xl shadow-lg card-hover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h3 class="text-4xl lg:text-5xl font-bold text-medical-800 mb-6">Our Product Categories</h3>
+                <p class="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
+                    Comprehensive medical equipment solutions designed to meet the diverse needs of modern healthcare environments, from large medical institutions to specialized care facilities.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-10 mb-20">
+                <div class="bg-white border-2 border-gray-100 rounded-3xl p-8 card-hover group">
+                    <div class="w-20 h-20 bg-medical-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-medical-200 transition-colors">
+                        <i class="fas fa-hospital text-medical-600 text-2xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-medical-800 mb-4">Hospital Products</h4>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Professional-grade equipment engineered for institutional healthcare facilities. From advanced diagnostic systems to mobile medical carts, designed for reliability and precision.
+                    </p>
+                    <a href="https://www.semestamedika.com/shop?category=hospital-products" class="text-medical-600 font-semibold hover:text-medical-700 transition-colors inline-flex items-center">
+                        View Hospital Products <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="bg-white border-2 border-gray-100 rounded-3xl p-8 card-hover group">
+                    <div class="w-20 h-20 bg-medical-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-medical-200 transition-colors">
+                        <i class="fas fa-home text-medical-600 text-2xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-medical-800 mb-4">Homecare Products</h4>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Specialized equipment designed for individual patient care in residential settings, ensuring comfort, safety, and effective healthcare delivery in home environments.
+                    </p>
+                    <a href="https://www.semestamedika.com/shop?category=homecare-products" class="text-medical-600 font-semibold hover:text-medical-700 transition-colors inline-flex items-center">
+                        View Homecare Products <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <div class="bg-white border-2 border-gray-100 rounded-3xl p-8 card-hover group">
+                    <div class="w-20 h-20 bg-medical-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-medical-200 transition-colors">
+                        <i class="fas fa-bed text-medical-600 text-2xl"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-medical-800 mb-4">Ward Furniture</h4>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Ergonomic furniture and infrastructure solutions for medical wards, optimizing patient care environments with durable, functional, and aesthetically pleasing designs.
+                    </p>
+                    <a href="https://www.semestamedika.com/shop?category=ward-furnitures" class="text-medical-600 font-semibold hover:text-medical-700 transition-colors inline-flex items-center">
+                        View Ward Furniture <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Featured Products Showcase -->
+            <div class="bg-gradient-to-br from-medical-50 to-medical-100 rounded-3xl p-12">
+                <h4 class="text-3xl font-bold text-medical-800 mb-12 text-center">Featured Equipment</h4>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                        <img src="eulife.jpg" 
+                             alt="U-life Mobile Cart for Laptop" 
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h5 class="font-bold text-medical-800 mb-2 text-lg">U-life Mobile Cart for Laptop</h5>
+                            <p class="text-gray-600 text-sm mb-4">Advanced mobile workstation for modern healthcare environments</p>
+                            <a href="https://www.semestamedika.com/product-detail/u-life-mobile-cart-for-laptop" class="text-medical-600 font-semibold hover:text-medical-700 transition-colors">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                        <img src="examcouch.jpg" 
+                             alt="Examination Couch JCI-2000EC" 
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h5 class="font-bold text-medical-800 mb-2 text-lg">Examination Couch JCI-2000EC</h5>
+                            <p class="text-gray-600 text-sm mb-4">Professional examination furniture with adjustable features</p>
+                            <a href="https://www.semestamedika.com/product-detail/examination-couch-jci-2000ec-1" class="text-medical-600 font-semibold hover:text-medical-700 transition-colors">Learn More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+                        <img src="test.png" 
+                             alt="Portable Health Check Up Station" 
+                             class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h5 class="font-bold text-medical-800 mb-2 text-lg">Portable Health Check Up Station</h5>
+                            <p class="text-gray-600 text-sm mb-4">Comprehensive diagnostic station for mobile healthcare</p>
+                            <a href="https://www.semestamedika.com/product-detail/portable-health-check-up-station-sk-gs6" class="text-medical-600 font-semibold hover:text-medical-700 transition-colors">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="https://www.semestamedika.com/shop" class="btn-primary text-white px-8 py-4 rounded-xl font-semibold inline-flex items-center">
+                        <i class="fas fa-shopping-cart mr-3"></i>
+                        Browse Complete Catalog
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h3 class="text-4xl lg:text-5xl font-bold text-medical-800 mb-6">Our Services</h3>
+                <p class="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
+                    Beyond equipment supply, we provide comprehensive support services to ensure your medical facilities operate at peak efficiency.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-8 bg-white rounded-2xl shadow-sm card-hover">
+                    <div class="w-20 h-20 bg-medical-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shipping-fast text-medical-600 text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-medical-800 mb-4">Fast Delivery</h4>
+                    <p class="text-gray-600 leading-relaxed">Nationwide delivery with express shipping options for urgent medical equipment needs.</p>
+                </div>
+                
+                <div class="text-center p-8 bg-white rounded-2xl shadow-sm card-hover">
+                    <div class="w-20 h-20 bg-medical-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-tools text-medical-600 text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-medical-800 mb-4">Installation</h4>
+                    <p class="text-gray-600 leading-relaxed">Professional installation and setup services by certified technicians.</p>
+                </div>
+                
+                <div class="text-center p-8 bg-white rounded-2xl shadow-sm card-hover">
+                    <div class="w-20 h-20 bg-medical-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-graduation-cap text-medical-600 text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-medical-800 mb-4">Training</h4>
+                    <p class="text-gray-600 leading-relaxed">Comprehensive training programs for healthcare staff on equipment operation.</p>
+                </div>
+                
+                <div class="text-center p-8 bg-white rounded-2xl shadow-sm card-hover">
+                    <div class="w-20 h-20 bg-medical-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-headset text-medical-600 text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-medical-800 mb-4">24/7 Support</h4>
+                    <p class="text-gray-600 leading-relaxed">Round-the-clock technical support and maintenance services.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-16">
+                <a href="https://wads-frontend-alpha.vercel.app/" class="btn-primary text-white px-8 py-4 rounded-xl font-semibold inline-flex items-center">
+                    <i class="fas fa-headset mr-3"></i>
+                    Contact Support Team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Clients Section -->
+    <section class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl lg:text-5xl font-bold text-medical-800 mb-6">Our Clients</h3>
+                <p class="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
+                    Trusted by leading healthcare institutions across Indonesia. We're proud to serve hospitals, clinics, and medical facilities nationwide.
+                </p>
+            </div>
+
+            <!-- Client Logos -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gray-50 p-6 rounded-xl flex items-center justify-center h-32">
+                    <img src="emc.png" alt="Hospital Client" class="max-h-16">
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl flex items-center justify-center h-32">
+                    <img src="hermina.png" alt="Clinic Client" class="max-h-16">
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl flex items-center justify-center h-32">
+                    <img src="Mitra_Keluarga_2014.svg.png" alt="Medical Center Client" class="max-h-16">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Partners Section -->
+    <section class="section-padding bg-medical-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl lg:text-5xl font-bold text-medical-800 mb-6">Our Partners</h3>
+                <p class="text-gray-600 text-xl max-w-3xl mx-auto leading-relaxed">
+                    Collaborating with global leaders in medical technology to bring you the best healthcare solutions.
+                </p>
+            </div>
+
+            <!-- Partner Logos -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-6 rounded-xl flex items-center justify-center h-32 shadow-sm">
+                    <img src="joson.png" alt="Partner 1" class="max-h-16">
+                </div>
+                <div class="bg-white p-6 rounded-xl flex items-center justify-center h-32 shadow-sm">
+                    <img src="yarward.png" alt="Partner 2" class="max-h-16">
+                </div>
+                <div class="bg-white p-6 rounded-xl flex items-center justify-center h-32 shadow-sm">
+                    <img src="faspro.png" alt="Partner 3" class="max-h-16">
+                </div>
+                <div class="bg-white p-6 rounded-xl flex items-center justify-center h-32 shadow-sm">
+                    <img src="transtel (1).png" alt="Partner 4" class="max-h-16">
+                </div>
+                <div class="bg-white p-6 rounded-xl flex items-center justify-center h-32 shadow-sm">
+                    <img src="karma.png" alt="Partner 5" class="max-h-16">
+                </div>
+                <div class="bg-white p-6 rounded-xl flex items-center justify-center h-32 shadow-sm">
+                    <img src="hik_vision.png" alt="Partner 6" class="max-h-16">
+                </div>
+                <div class="bg-white p-6 rounded-xl flex items-center justify-center h-32 shadow-sm">
+                    <img src="AKUVOX_logo.png" alt="Partner 7" class="max-h-16">
+                </div>
+                <div class="bg-white p-6 rounded-xl flex items-center justify-center h-32 shadow-sm">
+                    <img src="life.png" alt="Partner 8" class="max-h-16">
+                </div>
+                <div class="bg-white p-6 rounded-xl flex items-center justify-center h-32 shadow-sm">
+                    <img src="sonka.jpeg" alt="Partner 9" class="max-h-16">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-medical-600">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl lg:text-5xl font-bold text-white mb-6">Get In Touch</h3>
+                <p class="text-blue-100 text-xl max-w-3xl mx-auto leading-relaxed">
+                    Ready to transform your healthcare facility? Contact our team of experts for personalized consultation and equipment recommendations.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="bg-white rounded-3xl p-10">
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-6">
+                            <div class="w-16 h-16 bg-medical-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-medical-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-medical-800 mb-3 text-lg">Corporate Address</h4>
+                                <p class="text-gray-600 leading-relaxed">
+                                    PT. Semesta Medika Makmur<br>
+                                    Jl. Kamal Raya Outer Ring Road<br>
+                                    Mutiara Taman Palem Blok A2 No 28<br>
+                                    Cengkareng - Jakarta Barat 11730<br>
+                                    Indonesia
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-6">
+                            <div class="w-16 h-16 bg-medical-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-medical-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-medical-800 mb-3 text-lg">Phone Numbers</h4>
+                                <div class="space-y-2 text-gray-600">
+                                    <p>Main: (021) 29517888</p>
+                                    <p>Sales: (021) 54396999</p>
+                                    <p>Support: (021) 29020168</p>
+                                    <p>Service: (021) 29312345</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-6">
+                            <div class="w-16 h-16 bg-medical-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-medical-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-medical-800 mb-3 text-lg">Email Contact</h4>
+                                <p class="text-gray-600 mb-2">semestamedikamakmur@gmail.com</p>
+                                <div class="flex space-x-4 mt-4">
+                                    <a href="https://wads-frontend-alpha.vercel.app/" class="bg-medical-100 text-medical-700 px-4 py-2 rounded-lg font-medium hover:bg-medical-200 transition-colors text-sm">
+                                        <i class="fas fa-headset mr-2"></i>Support Portal
+                                    </a>
+                                    <a href="https://shop.semestamedikamakmur.com" class="bg-medical-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-medical-700 transition-colors text-sm">
+                                        <i class="fas fa-shopping-cart mr-2"></i>Online Store
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6666666666665!2d106.7333333!3d-6.1333333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f7e2b3c3c3c3%3A0x2e69f7e2b3c3c3c3!2sJl.%20Kamal%20Raya%20Outer%20Ring%20Road%2C%20Mutiara%20Taman%20Palem%20Blok%20A2%20No%2028%2C%20Cengkareng%2C%20Jakarta%20Barat%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1623333333333!5m2!1sen!2sid" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="w-full h-full min-h-96">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-transparent rounded-lg flex items-center justify-center">
+                            <img src="logo-baru-banget (2).png" alt="Company Logo" class="h-full w-full object-contain">
+                        </div>
+                        <span class="text-xl font-bold">Semesta Medika Makmur</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        Empowering Health with Quality, Service, and Innovation. Dedicated to providing the best medical equipment solutions for healthcare providers across Indonesia.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-medical-blue-400 mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="#home" class="block text-gray-400 hover:text-white transition-colors">Home</a>
+                        <a href="#about" class="block text-gray-400 hover:text-white transition-colors">About Us</a>
+                        <a href="#products" class="block text-gray-400 hover:text-white transition-colors">Products</a>
+                        <a href="#contact" class="block text-gray-400 hover:text-white transition-colors">Contact</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-medical-blue-400 mb-4">Product Categories</h4>
+                    <div class="space-y-2">
+                        <a href="#products" class="block text-gray-400 hover:text-white transition-colors">Hospital Products</a>
+                        <a href="#products" class="block text-gray-400 hover:text-white transition-colors">Homecare Products</a>
+                        <a href="#products" class="block text-gray-400 hover:text-white transition-colors">Ward Furniture</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Semesta Medika Makmur. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('bg-white');
+                header.classList.remove('bg-white/90');
+            } else {
+                header.classList.add('bg-white/90');
+                header.classList.remove('bg-white');
+            }
+        });
+    </script>
+</body>
+</html>
