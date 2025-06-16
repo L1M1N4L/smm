@@ -33,6 +33,287 @@
                 }
             }
         }
+
+        // Product specifications data
+        const productSpecs = {
+            'mobile-cart': {
+                title: 'Mobile Cart for Laptop with Mouse Plate',
+                specs: {
+                    'Dimensions': '600 x 500 x 1000-1200mm',
+                    'Weight Capacity': '15kg',
+                    'Material': 'Stainless Steel Frame',
+                    'Features': [
+                        'Height adjustable (1000-1200mm)',
+                        'Integrated mouse plate',
+                        '360° swivel casters',
+                        'Cable management system',
+                        'Anti-tip design'
+                    ]
+                },
+                brochurePath: null /* Set to null as no specific brochure is available */
+            },
+            'sonka-e600a': {
+                title: 'Sonka SK-E600A',
+                specs: {
+                    'Dimensions': '400 x 300 x 1800mm',
+                    'Weight': '45kg',
+                    'Display': '15.6" Touch Screen',
+                    'Measurements': [
+                        'Height: 100-200cm',
+                        'Weight: 5-200kg',
+                        'BMI: Auto-calculated',
+                        'Temperature: 35-42°C',
+                        'Blood Oxygen: 70-100%',
+                        'Blood Pressure: 60-250mmHg'
+                    ],
+                    'Connectivity': [
+                        'WiFi',
+                        'Bluetooth',
+                        'USB',
+                        'Ethernet'
+                    ]
+                },
+                brochurePath: 'Pdf/Sonka SK-E600A.pdf'
+            },
+            'sonka-x60hd': {
+                title: 'Sonka SK-X60HD',
+                specs: {
+                    'Dimensions': '450 x 350 x 1900mm',
+                    'Weight': '50kg',
+                    'Display': '17" HD Touch Screen',
+                    'Features': [
+                        'Multi-parameter monitoring',
+                        'Cloud data storage',
+                        'QR code login',
+                        'HIS integration',
+                        'Multi-language support'
+                    ]
+                },
+                brochurePath: 'Pdf/Sonka SK-X60HD.pdf'
+            },
+            'examination-couch': {
+                title: 'Examination Couch JCI-2000EC',
+                specs: {
+                    'Dimensions': '2000 x 700 x 500-800mm',
+                    'Weight Capacity': '200kg',
+                    'Material': 'Stainless Steel',
+                    'Features': [
+                        'Electric height adjustment',
+                        'Backrest adjustment',
+                        'Removable headrest',
+                        'Foldable design',
+                        'Easy-clean upholstery'
+                    ]
+                },
+                brochurePath: 'Pdf/2000EC,2000TC,1000EC.pdf'
+            },
+            'hospital-bed': {
+                title: 'Universal Electric Hospital Bed ES-16NS',
+                specs: {
+                    'Dimensions': '2200 x 1000 x 450-750mm',
+                    'Weight Capacity': '250kg',
+                    'Features': [
+                        'Electric height adjustment',
+                        'Trendelenburg position',
+                        'Auto-chair function',
+                        'Full-length side rails',
+                        'Removable head/foot boards'
+                    ],
+                    'Safety': [
+                        'Anti-tip design',
+                        'Battery backup',
+                        'Emergency stop',
+                        'CPR function'
+                    ]
+                },
+                brochurePath: null /* Set to null as per user request */
+            },
+            'homecare-bed': {
+                title: 'Universal Electric Hospital Bed ES-16NS',
+                specs: {
+
+                    
+                },
+                brochurePath: null
+            },
+            'sonka-l08': {
+                title: 'Sonka SK-L08',
+                specs: {
+                    'Measurements': [
+                        'Height: 100-200cm',
+                        'Weight: 5-200kg',
+                        'BMI: Auto-calculated',
+                        'Temperature: 35-42°C',
+                        'Blood Oxygen: 70-100%',
+                        'Blood Pressure: 60-250mmHg'
+                    ]
+                },
+                brochurePath:null  /* Set to null as no specific brochure is available */
+            },
+            'sonka-gs6': {
+                title: 'Sonka SK-GS6',
+                specs: {
+                    'Measurements': [
+                        'Height: 100-200cm',
+                        'Weight: 5-200kg',
+                        'BMI: Auto-calculated',
+                        'Temperature: 35-42°C',
+                        'Blood Oxygen: 70-100%',
+                        'Blood Pressure: 60-250mmHg'
+                    ]
+                },
+                brochurePath: 'Pdf/SKGS6.pdf'
+            },
+            'triage-lamp': {
+                title: 'Triage Lamp with Tablet for Emergency Room',
+                specs: {
+                    'Features': [
+                        'LoRa Modulation',
+                        'Tablet Control',
+                        'Low Power',
+                        'Emergency Ready'
+                    ]
+                },
+                brochurePath: 'Pdf/BROSUR LAMPU TRIASE REV 2.pdf'
+            },
+            'y-18pc': {
+                title: 'Meascare Y-18PC Weight & Height Scale',
+                specs: {
+                    'Features': [
+                        'Ultrasonic',
+                        'Touchscreen',
+                        'Foldable',
+                        'High Accuracy'
+                    ]
+                },
+                brochurePath: 'Pdf/Meascare Y-18PC Weight & Height Scale.pdf'
+            },
+            'y-21pc': {
+                title: 'Meascare Y-21PC Health Checkup Station',
+                specs: {
+                    'Features': [
+                        'Health Checkup',
+                        'BP Monitoring',
+                        'Comprehensive',
+                        'Station'
+                    ]
+                },
+                brochurePath: 'Pdf/Meascare Y-21PC Health Checkup Station.pdf'
+            },
+            'y-22pc': {
+                title: 'Meascare Y-22PC Health Checkup Station',
+                specs: {
+                    'Features': [
+                        'Temperature',
+                        'SPO2',
+                        'BP Monitoring',
+                        'Advanced'
+                    ]
+                },
+                brochurePath: 'Pdf/Meascare Y-22PC Health Checkup Station.pdf'
+            },
+            'y-11pc': {
+                title: 'Meascare Y-11PC Baby Scale',
+                specs: {
+                    'Features': [
+                        'Baby Scale',
+                        'Precise',
+                        'Gentle',
+                        'Infant Safe'
+                    ]
+                },
+                brochurePath: 'Pdf/Meascare Y-11PC Baby Scale.pdf'
+            },
+            'exam-couch': {
+                title: 'Exam Couch – JCI-1000EC',
+                specs: {
+                    'Features': [
+                        'Adjustable',
+                        'Ergonomic',
+                        'High Weight',
+                        'Versatile'
+                    ]
+                },
+                brochurePath: 'Pdf/2000EC,2000TC,1000EC.pdf'
+            },
+            'therapy-couch': {
+                title: 'Therapy Couch – JCI-1000TC',
+                specs: {
+                    'Features': [
+                        'Motorized',
+                        'High Capacity',
+                        'Smooth',
+                        'Comfortable'
+                    ]
+                },
+                brochurePath: 'Pdf/2000EC,2000TC,1000EC.pdf'
+            },
+            'wireless-micro-camera': {
+                title: 'Standalone Wireless Micro Camera',
+                specs: {
+                    'Features': [
+                        'Full HD',
+                        'Wireless',
+                        'Auto-focus',
+                        'App Control'
+                    ]
+                },
+                brochurePath: 'Pdf/Standalone Wireless Micro Camera.pdf'
+            },
+            'wireless-medi-cam': {
+                title: 'Wireless MediCam',
+                specs: {
+                    'Features': [
+                        'Wireless',
+                        'Live Stream',
+                        'HD Recording',
+                        'Multi-platform'
+                    ]
+                },
+                brochurePath: 'Pdf/Wireless MediCam.pdf'
+            },
+            'cordless-high-lux-led': {
+                title: 'Cordless High Lux LED Lamp',
+                specs: {
+                    'Features': [
+                        'Cordless',
+                        'High Lux',
+                        'Adjustable',
+                        'Lightweight'
+                    ]
+                },
+                brochurePath: null /* Set to null as no specific brochure is available */
+            }
+        };
+
+        function downloadSpecs(productId) {
+            const product = productSpecs[productId];
+            if (!product || product.brochurePath === null) {
+                const notification = document.getElementById('download-notification');
+                notification.textContent = `Brochure for ${product ? product.title : 'this product'} not available yet. Contact us for more detail information.`;
+                notification.classList.remove('opacity-0', 'pointer-events-none');
+                notification.classList.add('opacity-100');
+
+                setTimeout(() => {
+                    notification.classList.remove('opacity-100');
+                    notification.classList.add('opacity-0', 'pointer-events-none');
+                }, 3000);
+                return; // Stop function execution
+            }
+
+            const notification = document.getElementById('download-notification');
+            notification.textContent = `Downloading brochure for ${product.title}...`;
+            notification.classList.remove('opacity-0', 'pointer-events-none');
+            notification.classList.add('opacity-100');
+
+            setTimeout(() => {
+                notification.classList.remove('opacity-100');
+                notification.classList.add('opacity-0', 'pointer-events-none');
+            }, 3000);
+
+            // Open the PDF in a new tab
+            window.open(product.brochurePath, '_blank');
+        }
     </script>
     <style>
         body {
@@ -40,12 +321,98 @@
         }
         
         .product-card {
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            height: 600px; /* Changed from min-height to fixed height for consistent alignment */
         }
         
         .product-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .product-card figure {
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8fafc;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 1rem;
+        }
+
+        .product-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .feature-tag {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .product-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: auto;
+            padding: 2rem;
+            border-top: 1px solid #e2e8f0;
+            justify-content: flex-end;
+        }
+
+        .action-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .action-button.primary {
+            background-color: #0ea5e9;
+            color: white;
+        }
+
+        .action-button.primary:hover {
+            background-color: #0284c7;
+        }
+
+        .action-button.secondary {
+            background-color: #0ea5e9;
+            color: white;
+        }
+
+        .action-button.secondary:hover {
+            background-color: #0284c7;
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+
+        .category-description {
+            color: #64748b;
+            max-width: 2xl;
+            margin-top: 0.5rem;
         }
 
         .nav-link {
@@ -102,6 +469,11 @@
         </nav>
     </header>
 
+    <!-- Download Notification -->
+    <div id="download-notification" class="fixed top-20 left-1/2 -translate-x-1/2 bg-medical-600 text-white px-6 py-3 rounded-lg shadow-lg z-50 transition-opacity duration-500 opacity-0 pointer-events-none">
+        Downloading brochure...
+    </div>
+
     <main class="pt-32 pb-20">
         <div class="container mx-auto px-6">
             <!-- Page Header -->
@@ -116,169 +488,449 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Hospital Equipment Category -->
                 <div class="col-span-full">
-                    <h3 class="text-2xl font-bold text-medical-800 mb-6">Hospital Equipment</h3>
+                    <div class="category-header">
+                        <div>
+                            <h3 class="text-2xl font-bold text-medical-800">Hospital Equipment</h3>
+                            <p class="category-description">Advanced medical devices and equipment designed for modern healthcare facilities.</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- U-life Mobile Cart -->
+                <!-- Mobile Cart for Laptop with Mouse Plate -->
                 <article class="product-card bg-white rounded-xl shadow-sm overflow-hidden">
                     <figure class="relative">
-                        <img src="eulife.jpg" alt="U-life Mobile Cart" class="w-full h-64 object-cover">
-                        <div class="absolute top-4 right-4">
-                            <span class="bg-medical-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                                Featured
-                            </span>
+                        <img src="images/eulife.png" alt="Mobile Cart for Laptop with Mouse Plate" class="w-full h-full object-contain">
+                    </figure>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-medical-800 mb-2">Mobile Cart for Laptop with Mouse Plate</h3>
+                        <p class="text-gray-600">A height-adjustable mobile cart designed for convenient and ergonomic laptop use with integrated mouse plate in various environments.</p>
+                        
+                        <div class="product-features">
+                            <span class="feature-tag">Height Adjustable</span>
+                            <span class="feature-tag">Ergonomic Design</span>
+                            <span class="feature-tag">Mouse Plate</span>
+                            <span class="feature-tag">Mobile</span>
                         </div>
-                    </figure>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-medical-800 mb-2">U-life Mobile Cart for Laptop</h3>
-                        <p class="text-gray-600">A height-adjustable mobile cart designed for convenient and ergonomic laptop use in various environments.</p>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="downloadSpecs('mobile-cart')" class="action-button secondary">
+                            <i class="fas fa-download"></i>
+                            Specs
+                        </button>
                     </div>
                 </article>
 
-                <!-- Triage Lamp -->
+                <!-- Sonka SK-E600A -->
                 <article class="product-card bg-white rounded-xl shadow-sm overflow-hidden">
                     <figure class="relative">
-                        <img src="images/TriaceLamp.png" alt="Triage Lamp" class="w-full h-64 object-cover">
+                        <img src="images/SK-E600A.png" alt="Sonka SK-E600A" class="w-full h-full object-contain">
                     </figure>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-medical-800 mb-2">Triage Lamp for Emergency Rooms</h3>
-                        <p class="text-gray-600">Easy-to-use low-power triage lamp with LoRa modulation, ideal for hospitals and clinics. One tablet can control over 25 lamps.</p>
-                    </div>
-                </article>
-
-                <!-- Height & Weight Scale -->
-                <article class="product-card bg-white rounded-xl shadow-sm overflow-hidden">
-                    <figure class="relative">
-                        <img src="images/HeightandWeightScale.jpeg" alt="Height & Weight Scale" class="w-full h-64 object-cover">
-                    </figure>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-medical-800 mb-2">Height & Weight Scale</h3>
-                        <p class="text-gray-600">High-accuracy ultrasonic height and weight scale with a color touchscreen. Durable design, easy to fold and move.</p>
-                    </div>
-                </article>
-
-                <!-- Multi-Purpose Measuring Machine -->
-                <article class="product-card bg-white rounded-xl shadow-sm overflow-hidden">
-                    <figure class="relative">
-                        <img src="images/MultiPurposeMeasuringMachine.jpeg" alt="Multi-Purpose Measuring Machine" class="w-full h-64 object-cover">
-                    </figure>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-medical-800 mb-2">Multi-Purpose Measuring Machine – SK-E600A</h3>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-medical-800 mb-2">Sonka SK-E600A</h3>
                         <p class="text-gray-600">Fast and contactless measurement of height, weight, BMI, temperature, blood oxygen, and blood pressure. Smart login with ID card or QR code, auto file creation, and HIS integration.</p>
+                        
+                        <div class="product-features">
+                            <span class="feature-tag">Contactless</span>
+                            <span class="feature-tag">Multi-function</span>
+                            <span class="feature-tag">Smart Login</span>
+                            <span class="feature-tag">HIS Integration</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="downloadSpecs('sonka-e600a')" class="action-button secondary">
+                            <i class="fas fa-download"></i>
+                            Specs
+                        </button>
                     </div>
                 </article>
 
-                <!-- Portable Health Check Up Station -->
+                <!-- Sonka SK-X60HD -->
                 <article class="product-card bg-white rounded-xl shadow-sm overflow-hidden">
                     <figure class="relative">
-                        <img src="test.png" alt="Portable Health Check Up Station" class="w-full h-64 object-cover">
+                        <img src="images/SK-X60HD.png" alt="Sonka SK-X60HD" class="w-full h-full object-contain">
                     </figure>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-medical-800 mb-2">Portable Health Check Up Station SK - GS6</h3>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-medical-800 mb-2">Sonka SK-X60HD</h3>
+                        <p class="text-gray-600">An all-in-one digital kiosk for comprehensive body measurements and vital signs monitoring with advanced reporting features.</p>
+                        
+                        <div class="product-features">
+                            <span class="feature-tag">Digital Kiosk</span>
+                            <span class="feature-tag">Vital Signs</span>
+                            <span class="feature-tag">Body Measurements</span>
+                            <span class="feature-tag">Advanced Reporting</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="downloadSpecs('sonka-x60hd')" class="action-button secondary">
+                            <i class="fas fa-download"></i>
+                            Specs
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Sonka SK-L08 -->
+                <article class="product-card bg-white rounded-xl shadow-sm overflow-hidden">
+                    <figure class="relative">
+                        <img src="images/SK-L08.png" alt="Sonka SK-L08" class="w-full h-full object-contain">
+                    </figure>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-medical-800 mb-2">Sonka SK-L08</h3>
+                        <p class="text-gray-600">Advanced medical device for comprehensive health monitoring and measurements.</p>
+                        
+                        <div class="product-features">
+                            <span class="feature-tag">Health Monitoring</span>
+                            <span class="feature-tag">Comprehensive</span>
+                            <span class="feature-tag">Advanced Tech</span>
+                            <span class="feature-tag">Precise</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="downloadSpecs('sonka-l08')" class="action-button secondary">
+                            <i class="fas fa-download"></i>
+                            Specs
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Sonka SK-GS6 -->
+                <article class="product-card bg-white rounded-xl shadow-sm overflow-hidden">
+                    <figure class="relative">
+                        <img src="images/SK-GS6.png" alt="Sonka SK-GS6" class="w-full h-full object-contain">
+                    </figure>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-medical-800 mb-2">Sonka SK-GS6</h3>
                         <p class="text-gray-600">A compact, lightweight health check-up station with integrated multi-functionality for portable medical diagnostics.</p>
+                        
+                        <div class="product-features">
+                            <span class="feature-tag">Compact</span>
+                            <span class="feature-tag">Lightweight</span>
+                            <span class="feature-tag">Portable</span>
+                            <span class="feature-tag">Multi-function</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="downloadSpecs('sonka-gs6')" class="action-button secondary">
+                            <i class="fas fa-download"></i>
+                            Specs
+                        </button>
                     </div>
                 </article>
 
-                <!-- Health Check Up Kiosk -->
+                <!-- Triage Lamp with Tablet -->
                 <article class="product-card bg-white rounded-xl shadow-sm overflow-hidden">
                     <figure class="relative">
-                        <img src="images/SK-X60HD.png" alt="Health Check Up Kiosk" class="w-full h-64 object-cover">
+                        <img src="images/TriaceLamp.png" alt="Triage Lamp with Tablet" class="w-full h-full object-contain">
                     </figure>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-medical-800 mb-2">Health Check Up Kiosk SK-X60HD</h3>
-                        <p class="text-gray-600">An all-in-one digital kiosk for comprehensive body measurements and vital signs monitoring with reporting features.</p>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-medical-800 mb-2">Triage Lamp with Tablet for Emergency Room</h3>
+                        <p class="text-gray-600">Easy-to-use low-power triage lamp with LoRa modulation and tablet control. One tablet can control over 25 lamps, perfect for emergency rooms.</p>
+                        
+                        <div class="product-features">
+                            <span class="feature-tag">LoRa Modulation</span>
+                            <span class="feature-tag">Tablet Control</span>
+                            <span class="feature-tag">Low Power</span>
+                            <span class="feature-tag">Emergency Ready</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="downloadSpecs('triage-lamp')" class="action-button secondary">
+                            <i class="fas fa-download"></i>
+                            Specs
+                        </button>
                     </div>
                 </article>
 
-                <!-- Cordless High Lux LED Lamp -->
+                <!-- Meascare Y-18PC -->
                 <article class="product-card bg-white rounded-xl shadow-sm overflow-hidden">
                     <figure class="relative">
-                        <img src="images/Cordless-High-Lux-LED.jpeg" alt="Cordless High Lux LED Lamp" class="w-full h-64 object-cover">
+                        <img src="images/Y-18PC.png" alt="Meascare Y-18PC" class="w-full h-full object-contain">
                     </figure>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-medical-800 mb-2">Cordless High Lux LED Lamp</h3>
-                        <p class="text-gray-600">A lightweight, wireless LED headlamp offering powerful illumination with adjustable intensity for medical professionals.</p>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-medical-800 mb-2">Meascare Y-18PC Weight & Height Scale</h3>
+                        <p class="text-gray-600">High-accuracy ultrasonic height and weight scale with a color touchscreen. Durable design, easy to fold and move.</p>
+                        
+                        <div class="product-features">
+                            <span class="feature-tag">Ultrasonic</span>
+                            <span class="feature-tag">Touchscreen</span>
+                            <span class="feature-tag">Foldable</span>
+                            <span class="feature-tag">High Accuracy</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="downloadSpecs('y-18pc')" class="action-button secondary">
+                            <i class="fas fa-download"></i>
+                            Specs
+                        </button>
                     </div>
                 </article>
 
-                <!-- Standalone Wireless Micro Camera -->
+                <!-- Meascare Y-21PC -->
                 <article class="product-card bg-white rounded-xl shadow-sm overflow-hidden">
                     <figure class="relative">
-                        <img src="images/WirelessMicroCam.jpeg" alt="Standalone Wireless Micro Camera" class="w-full h-64 object-cover">
+                        <img src="images/Y-21PC.png" alt="Meascare Y-21PC" class="w-full h-full object-contain">
                     </figure>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-medical-800 mb-2">Standalone Wireless Micro Camera</h3>
-                        <p class="text-gray-600">A full HD wireless scope camera with auto-focus and app control, designed for surgical and dental procedures.</p>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-medical-800 mb-2">Meascare Y-21PC Health Checkup Station</h3>
+                        <p class="text-gray-600">Comprehensive health checkup station with blood pressure monitoring capabilities.</p>
+                        
+                        <div class="product-features">
+                            <span class="feature-tag">Health Checkup</span>
+                            <span class="feature-tag">BP Monitoring</span>
+                            <span class="feature-tag">Comprehensive</span>
+                            <span class="feature-tag">Station</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="downloadSpecs('y-21pc')" class="action-button secondary">
+                            <i class="fas fa-download"></i>
+                            Specs
+                        </button>
                     </div>
                 </article>
 
-                <!-- Wireless MediCam -->
+                <!-- Meascare Y-22PC -->
                 <article class="product-card bg-white rounded-xl shadow-sm overflow-hidden">
                     <figure class="relative">
-                        <img src="images/MediCam.jpeg" alt="Wireless MediCam" class="w-full h-64 object-cover">
+                        <img src="images/Y-22PC.png" alt="Meascare Y-22PC" class="w-full h-full object-contain">
                     </figure>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-medical-800 mb-2">Wireless MediCam</h3>
-                        <p class="text-gray-600">A wireless medical camera that supports live streaming, high-definition recording, and multi-platform integration.</p>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-medical-800 mb-2">Meascare Y-22PC Health Checkup Station</h3>
+                        <p class="text-gray-600">Advanced health checkup station for temperature, SPO2, and blood pressure monitoring.</p>
+                        
+                        <div class="product-features">
+                            <span class="feature-tag">Temperature</span>
+                            <span class="feature-tag">SPO2</span>
+                            <span class="feature-tag">BP Monitoring</span>
+                            <span class="feature-tag">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="downloadSpecs('y-22pc')" class="action-button secondary">
+                            <i class="fas fa-download"></i>
+                            Specs
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Meascare Y-11PC -->
+                <article class="product-card bg-white rounded-xl shadow-sm overflow-hidden">
+                    <figure class="relative">
+                        <img src="images/Y-11PC.png" alt="Meascare Y-11PC" class="w-full h-full object-contain">
+                    </figure>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-medical-800 mb-2">Meascare Y-11PC Baby Scale</h3>
+                        <p class="text-gray-600">Precise and gentle baby scale designed for accurate weight measurements of infants.</p>
+                        
+                        <div class="product-features">
+                            <span class="feature-tag">Baby Scale</span>
+                            <span class="feature-tag">Precise</span>
+                            <span class="feature-tag">Gentle</span>
+                            <span class="feature-tag">Infant Safe</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="downloadSpecs('y-11pc')" class="action-button secondary">
+                            <i class="fas fa-download"></i>
+                            Specs
+                        </button>
                     </div>
                 </article>
 
                 <!-- Ward Furniture Category -->
                 <div class="col-span-full mt-12">
-                    <h3 class="text-2xl font-bold text-medical-800 mb-6">Ward Furniture</h3>
+                    <div class="category-header">
+                        <div>
+                            <h3 class="text-2xl font-bold text-medical-800">Ward Furniture</h3>
+                            <p class="category-description">High-quality medical furniture designed for comfort, durability, and functionality in healthcare settings.</p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Examination Couch -->
                 <article class="product-card bg-white rounded-xl shadow-sm overflow-hidden">
                     <figure class="relative">
-                        <img src="images/JCI2000EC.jpg" alt="Examination Couch" class="w-full h-64 object-cover">
-                        <div class="absolute top-4 right-4">
-                            <span class="bg-medical-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-                                Featured
-                            </span>
-                        </div>
+                        <img src="images/JCI2000EC.png" alt="Examination Couch" class="w-full h-64 object-cover">
                     </figure>
-                    <div class="p-6">
+                    <div class="p-6 flex-grow">
                         <h3 class="text-xl font-bold text-medical-800 mb-2">Examination Couch JCI - 2000EC</h3>
                         <p class="text-gray-600">An advanced electric examination couch built for clinical precision, comfort, and heavy-duty use.</p>
+                        
+                        <div class="product-features">
+                            <span class="feature-tag">Electric</span>
+                            <span class="feature-tag">Heavy Duty</span>
+                            <span class="feature-tag">Comfortable</span>
+                            <span class="feature-tag">Precision</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="downloadSpecs('examination-couch')" class="action-button secondary">
+                            <i class="fas fa-download"></i>
+                            Specs
+                        </button>
                     </div>
                 </article>
 
                 <!-- Exam Couch -->
                 <article class="product-card bg-white rounded-xl shadow-sm overflow-hidden">
                     <figure class="relative">
-                        <img src="images/Exam Couch JCI-1000EC.jpg" alt="Exam Couch" class="w-full h-64 object-cover">
+                        <img src="images/Exam Couch JCI-1000EC.png" alt="Exam Couch" class="w-full h-64 object-cover">
                     </figure>
-                    <div class="p-6">
+                    <div class="p-6 flex-grow">
                         <h3 class="text-xl font-bold text-medical-800 mb-2">Exam Couch – JCI-1000EC</h3>
                         <p class="text-gray-600">Versatile electric exam couch with adjustable backrest, high weight tolerance, and modern ergonomic design for clinics and hospitals.</p>
+                        
+                        <div class="product-features">
+                            <span class="feature-tag">Adjustable</span>
+                            <span class="feature-tag">Ergonomic</span>
+                            <span class="feature-tag">High Weight</span>
+                            <span class="feature-tag">Versatile</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="downloadSpecs('exam-couch')" class="action-button secondary">
+                            <i class="fas fa-download"></i>
+                            Specs
+                        </button>
                     </div>
                 </article>
 
                 <!-- Therapy Couch -->
                 <article class="product-card bg-white rounded-xl shadow-sm overflow-hidden">
                     <figure class="relative">
-                        <img src="images/JCI2000TC.jpg" alt="Therapy Couch" class="w-full h-64 object-cover">
+                        <img src="images/JCI2000TC.png" alt="Therapy Couch" class="w-full h-64 object-cover">
                     </figure>
-                    <div class="p-6">
+                    <div class="p-6 flex-grow">
                         <h3 class="text-xl font-bold text-medical-800 mb-2">Therapy Couch – JCI-1000TC</h3>
                         <p class="text-gray-600">Electric motor-adjustable therapy couch with high weight capacity and smooth maneuverability. Designed for both patient comfort and caregiver convenience.</p>
+                        
+                        <div class="product-features">
+                            <span class="feature-tag">Motorized</span>
+                            <span class="feature-tag">High Capacity</span>
+                            <span class="feature-tag">Smooth</span>
+                            <span class="feature-tag">Comfortable</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="downloadSpecs('therapy-couch')" class="action-button secondary">
+                            <i class="fas fa-download"></i>
+                            Specs
+                        </button>
                     </div>
                 </article>
-
-                <!-- Homecare Products Category -->
-                <div class="col-span-full mt-12">
-                    <h3 class="text-2xl font-bold text-medical-800 mb-6">Homecare Products</h3>
-                </div>
 
                 <!-- Universal Electric Hospital Bed -->
                 <article class="product-card bg-white rounded-xl shadow-sm overflow-hidden">
                     <figure class="relative">
-                        <img src="images/ES-16NS.png" alt="Universal Electric Hospital Bed" class="w-full h-64 object-cover">
+                        <img src="images/ES-16NS.png" alt="Universal Electric Hospital Bed" class="w-full h-full object-contain">
                     </figure>
-                    <div class="p-6">
+                    <div class="p-6 flex-grow">
                         <h3 class="text-xl font-bold text-medical-800 mb-2">Universal Electric Hospital Bed – ES-16NS</h3>
                         <p class="text-gray-600">Durable electric hospital bed with removable head/foot boards, full-length side rails, auto-chair function, and various optional safety features. Designed for optimal patient care and ease of use by staff.</p>
+                        
+                        <div class="product-features">
+                            <span class="feature-tag">Electric</span>
+                            <span class="feature-tag">Removable</span>
+                            <span class="feature-tag">Auto-chair</span>
+                            <span class="feature-tag">Safety Rails</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="downloadSpecs('hospital-bed')" class="action-button secondary">
+                            <i class="fas fa-download"></i>
+                            Specs
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Medical Cameras Category -->
+                <div class="col-span-full mt-12">
+                    <div class="category-header">
+                        <div>
+                            <h3 class="text-2xl font-bold text-medical-800">Medical Cameras</h3>
+                            <p class="category-description">High-quality medical imaging solutions for precise diagnostics and procedures.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Standalone Wireless Micro Camera -->
+                <article class="product-card bg-white rounded-xl shadow-sm overflow-hidden">
+                    <figure class="relative">
+                        <img src="images/WirelessMicroCam.png" alt="Standalone Wireless Micro Camera" class="w-full h-full object-contain">
+                    </figure>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-medical-800 mb-2">Standalone Wireless Micro Camera</h3>
+                        <p class="text-gray-600">A full HD wireless scope camera with auto-focus and app control, designed for surgical and dental procedures.</p>
+                        
+                        <div class="product-features">
+                            <span class="feature-tag">Full HD</span>
+                            <span class="feature-tag">Wireless</span>
+                            <span class="feature-tag">Auto-focus</span>
+                            <span class="feature-tag">App Control</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="downloadSpecs('wireless-micro-camera')" class="action-button secondary">
+                            <i class="fas fa-download"></i>
+                            Specs
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Wireless MediCam -->
+                <article class="product-card bg-white rounded-xl shadow-sm overflow-hidden">
+                    <figure class="relative">
+                        <img src="images/MediCam.png" alt="Wireless MediCam" class="w-full h-full object-contain">
+                    </figure>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-medical-800 mb-2">Wireless MediCam</h3>
+                        <p class="text-gray-600">A wireless medical camera that supports live streaming, high-definition recording, and multi-platform integration.</p>
+                        
+                        <div class="product-features">
+                            <span class="feature-tag">Wireless</span>
+                            <span class="feature-tag">Live Stream</span>
+                            <span class="feature-tag">HD Recording</span>
+                            <span class="feature-tag">Multi-platform</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="downloadSpecs('wireless-medi-cam')" class="action-button secondary">
+                            <i class="fas fa-download"></i>
+                            Specs
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Medical Lighting Category -->
+                <div class="col-span-full mt-12">
+                    <div class="category-header">
+                        <div>
+                            <h3 class="text-2xl font-bold text-medical-800">Medical Lighting</h3>
+                            <p class="category-description">Advanced lighting solutions for medical professionals and procedures.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cordless High Lux LED Lamp -->
+                <article class="product-card bg-white rounded-xl shadow-sm overflow-hidden">
+                    <figure class="relative">
+                        <img src="images/Cordless-High-Lux-LED.png" alt="Cordless High Lux LED Lamp" class="w-full h-full object-contain">
+                    </figure>
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-xl font-bold text-medical-800 mb-2">Cordless High Lux LED Lamp</h3>
+                        <p class="text-gray-600">A lightweight, wireless LED headlamp offering powerful illumination with adjustable intensity for medical professionals.</p>
+                        
+                        <div class="product-features">
+                            <span class="feature-tag">Cordless</span>
+                            <span class="feature-tag">High Lux</span>
+                            <span class="feature-tag">Adjustable</span>
+                            <span class="feature-tag">Lightweight</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button onclick="downloadSpecs('cordless-high-lux-led')" class="action-button secondary">
+                            <i class="fas fa-download"></i>
+                            Specs
+                        </button>
                     </div>
                 </article>
             </div>
