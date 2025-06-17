@@ -109,24 +109,42 @@
     
     <!-- Header -->
     <header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
-        <nav class="container mx-auto px-6 py-4">
+        <nav class="container mx-auto px-4 sm:px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="flex items-center space-x-4">
-                    <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center">
+                <div class="flex items-center space-x-2 sm:space-x-4">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-xl flex items-center justify-center">
                         <img src="logo-baru-banget (2).png" alt="Company Logo" class="h-full w-full object-contain p-2">
                     </div>
                     <div>
-                        <h1 class="text-xl font-bold text-medical-800">Semesta Medika Makmur</h1>
-                        <p class="text-sm text-medical-600">Medical Equipment Excellence</p>
+                        <h1 class="text-lg sm:text-xl font-bold text-medical-800">Semesta Medika Makmur</h1>
+                        <p class="text-xs sm:text-sm text-medical-600">Medical Equipment Excellence</p>
                     </div>
                 </div>
-                <div class="hidden md:flex items-center space-x-8">
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-medical-800 hover:text-medical-600 focus:outline-none" id="mobile-menu-button">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-4 lg:space-x-8">
                     <a href="#home" class="nav-link font-medium">Home</a>
                     <a href="#about" class="nav-link font-medium">About</a>
                     <a href="#products" class="nav-link font-medium">Products</a>
                     <a href="#services" class="nav-link font-medium">Services</a>
                     <a href="#contact" class="nav-link font-medium">Contact</a>
-                    <a href="https://wads-frontend-alpha.vercel.app/" class="bg-medical-100 text-medical-700 px-4 py-2 rounded-lg font-medium hover:bg-medical-200 transition-colors">
+                    <a href="https://wads-frontend-alpha.vercel.app/" class="bg-medical-100 text-medical-700 px-3 sm:px-4 py-2 rounded-lg font-medium hover:bg-medical-200 transition-colors">
+                        <i class="fas fa-headset mr-2"></i>Support
+                    </a>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-4 pt-4 pb-3">
+                    <a href="#home" class="nav-link font-medium">Home</a>
+                    <a href="#about" class="nav-link font-medium">About</a>
+                    <a href="#products" class="nav-link font-medium">Products</a>
+                    <a href="#services" class="nav-link font-medium">Services</a>
+                    <a href="#contact" class="nav-link font-medium">Contact</a>
+                    <a href="https://wads-frontend-alpha.vercel.app/" class="bg-medical-100 text-medical-700 px-4 py-2 rounded-lg font-medium hover:bg-medical-200 transition-colors inline-flex items-center">
                         <i class="fas fa-headset mr-2"></i>Support
                     </a>
                 </div>
@@ -135,21 +153,21 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen hero-gradient relative overflow-hidden pt-20">
+    <section id="home" class="min-h-screen hero-gradient relative overflow-hidden pt-16 sm:pt-20">
         <div class="absolute inset-0 bg-black/10"></div>
         
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-16 items-center min-h-screen py-20">
+        <div class="container mx-auto px-4 sm:px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center min-h-screen py-12 sm:py-20">
                 <div class="text-white">
-                    <h2 class="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-7xl font-bold mb-4 sm:mb-8 leading-tight">
                         Empowering Health with 
                         <span class="text-cyan-200">Quality, Service, and Innovation</span>
                     </h2>
-                    <p class="text-xl mb-10 text-blue-100 leading-relaxed max-w-lg">
+                    <p class="text-base sm:text-lg lg:text-xl mb-6 sm:mb-10 text-blue-100 leading-relaxed max-w-lg">
                         Innovation propels the healthcare landscape forward, enabling breakthroughs in diagnostics, treatments, and preventive measures
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-6">
-                        <a href="catalog.html" class="bg-white text-medical-700 px-8 py-4 rounded-xl font-semibold hover:bg-gray-50 transition-all duration-300 inline-flex items-center justify-center group">
+                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+                        <a href="catalog.html" class="bg-white text-medical-700 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold hover:bg-gray-50 transition-all duration-300 inline-flex items-center justify-center group">
                             <i class="fas fa-box-open mr-3 group-hover:scale-110 transition-transform"></i>
                             Browse Catalog
                         </a>
@@ -157,73 +175,75 @@
                 </div>
                 
                 <div class="relative">
-                    <div class="bg-white/20 backdrop-blur-sm rounded-3xl p-8 border border-white/30">
+                    <div class="bg-white/20 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-4 sm:p-8 border border-white/30">
                         <img src="Screenshot 2025-06-11 192831.jpg" 
                              alt="Modern Medical Equipment" 
-                             class="w-full h-[500px] object-cover rounded-2xl shadow-2xl">
+                             class="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover rounded-xl sm:rounded-2xl shadow-2xl">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-  <!-- About Section -->
-  <section id="about" class="section-padding bg-gray-50">
-    <div class="container mx-auto px-6">
-        <div class="grid lg:grid-cols-2 gap-20 items-center">
-            <div>
-                <h3 class="text-4xl lg:text-5xl font-bold text-medical-800 mb-8">About Semesta Medika Makmur</h3>
-                <p class="text-gray-600 text-lg mb-6 leading-relaxed">
-                    As Indonesia's premier medical equipment provider, we have established ourselves as the cornerstone of healthcare innovation. Our commitment to quality, service, and cutting-edge technology drives us to deliver solutions that transform healthcare environments.
-                </p>
-                <p class="text-gray-600 text-lg mb-8 leading-relaxed">
-                    From state-of-the-art hospital equipment to specialized homecare solutions, we bridge the gap between medical necessity and technological advancement, ensuring healthcare providers have access to the tools they need to save lives and improve patient outcomes.
-                </p>
-                
-                <div class="bg-medical-600 text-white p-8 rounded-2xl mb-10 relative overflow-hidden">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
-                    <blockquote class="text-lg italic relative z-10">
-                        "Innovation in healthcare technology isn't just about advancing medicine—it's about advancing humanity's capacity to heal, care, and thrive."
-                    </blockquote>
-                    <cite class="block mt-4 text-cyan-200 font-semibold">— Our Mission Statement</cite>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div>
+                    <h3 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-medical-800 mb-6 sm:mb-8">About Semesta Medika Makmur</h3>
+                    <p class="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed">
+                        As Indonesia's premier medical equipment provider, we have established ourselves as the cornerstone of healthcare innovation. Our commitment to quality, service, and cutting-edge technology drives us to deliver solutions that transform healthcare environments.
+                    </p>
+                    <p class="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 leading-relaxed">
+                        From state-of-the-art hospital equipment to specialized homecare solutions, we bridge the gap between medical necessity and technological advancement, ensuring healthcare providers have access to the tools they need to save lives and improve patient outcomes.
+                    </p>
+                    
+                    <div class="bg-medical-600 text-white p-6 sm:p-8 rounded-2xl mb-8 sm:mb-10 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 sm:w-32 h-24 sm:h-32 bg-white/10 rounded-full -translate-y-12 sm:-translate-y-16 translate-x-12 sm:translate-x-16"></div>
+                        <blockquote class="text-base sm:text-lg italic relative z-10">
+                            "Innovation in healthcare technology isn't just about advancing medicine—it's about advancing humanity's capacity to heal, care, and thrive."
+                        </blockquote>
+                        <cite class="block mt-3 sm:mt-4 text-cyan-200 font-semibold">— Our Mission Statement</cite>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6">
+                        <div class="text-center p-4 sm:p-6 bg-white rounded-xl shadow-sm">
+                            <div class="text-2xl sm:text-4xl font-bold text-medical-600 mb-2">3</div>
+                            <div class="text-xs sm:text-sm text-gray-600 font-medium">Product Categories</div>
+                        </div>
+                        <div class="text-center p-4 sm:p-6 bg-white rounded-xl shadow-sm">
+                            <div class="text-2xl sm:text-4xl font-bold text-medical-600 mb-2">500+</div>
+                            <div class="text-xs sm:text-sm text-gray-600 font-medium">Equipment Models</div>
+                        </div>
+                        <div class="text-center p-4 sm:p-6 bg-white rounded-xl shadow-sm">
+                            <div class="text-2xl sm:text-4xl font-bold text-medical-600 mb-2">24/7</div>
+                            <div class="text-xs sm:text-sm text-gray-600 font-medium">Customer Support</div>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="grid grid-cols-3 gap-6">
-                    <div class="text-center p-6 bg-white rounded-xl shadow-sm">
-                        <div class="text-4xl font-bold text-medical-600 mb-2">3</div>
-                        <div class="text-sm text-gray-600 font-medium">Product Categories</div>
+                <div class="grid grid-cols-2 gap-4 sm:gap-6">
+                    <div class="space-y-4 sm:space-y-6">
+                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=250&fit=crop" 
+                             alt="Medical Technology Innovation" 
+                             class="w-full h-36 sm:h-48 object-cover rounded-xl sm:rounded-2xl shadow-lg card-hover">
+                        <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=300&h=250&fit=crop" 
+                             alt="Advanced Medical Equipment" 
+                             class="w-full h-48 sm:h-64 object-cover rounded-xl sm:rounded-2xl shadow-lg card-hover">
                     </div>
-                    <div class="text-center p-6 bg-white rounded-xl shadow-sm">
-                        <div class="text-4xl font-bold text-medical-600 mb-2">500+</div>
-                        <div class="text-sm text-gray-600 font-medium">Equipment Models</div>
+                    <div class="space-y-4 sm:space-y-6 mt-4 sm:mt-8">
+                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=300&h=250&fit=crop" 
+                             alt="Healthcare Innovation Solutions" 
+                             class="w-full h-48 sm:h-64 object-cover rounded-xl sm:rounded-2xl shadow-lg card-hover">
+                        <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=300&h=250&fit=crop" 
+                             alt="Modern Hospital Environment" 
+                             class="w-full h-36 sm:h-48 object-cover rounded-xl sm:rounded-2xl shadow-lg card-hover">
                     </div>
-                    <div class="text-center p-6 bg-white rounded-xl shadow-sm">
-                        <div class="text-4xl font-bold text-medical-600 mb-2">24/7</div>
-                        <div class="text-sm text-gray-600 font-medium">Customer Support</div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="grid grid-cols-2 gap-6">
-                <div class="space-y-6">
-                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=250&fit=crop" 
-                         alt="Medical Technology Innovation" 
-                         class="w-full h-48 object-cover rounded-2xl shadow-lg card-hover">
-                    <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=300&h=250&fit=crop" 
-                         alt="Advanced Medical Equipment" 
-                         class="w-full h-64 object-cover rounded-2xl shadow-lg card-hover">
-                </div>
-                <div class="space-y-6 mt-8">
-                    <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=300&h=250&fit=crop" 
-                         alt="Healthcare Innovation Solutions" 
-                         class="w-full h-64 object-cover rounded-2xl shadow-lg card-hover">
-                    <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=300&h=250&fit=crop" 
-                         alt="Modern Hospital Environment" 
-                         class="w-full h-48 object-cover rounded-2xl shadow-lg card-hover">
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
     <!-- Featured Products Section -->
     <section id="products" class="py-20 bg-white">
         <div class="container mx-auto px-6">
@@ -411,25 +431,25 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section-padding bg-medical-600">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h3 class="text-4xl lg:text-5xl font-bold text-white mb-6">Get In Touch</h3>
-                <p class="text-blue-100 text-xl max-w-3xl mx-auto leading-relaxed">
+    <section id="contact" class="py-16 sm:py-20 bg-medical-600">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12 sm:mb-16">
+                <h3 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">Get In Touch</h3>
+                <p class="text-blue-100 text-base sm:text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed">
                     Ready to transform your healthcare facility? Contact our team of experts for personalized consultation and equipment recommendations.
                 </p>
             </div>
             
-            <div class="grid lg:grid-cols-2 gap-16">
-                <div class="bg-white rounded-3xl p-10">
-                    <div class="space-y-8">
-                        <div class="flex items-start space-x-6">
-                            <div class="w-16 h-16 bg-medical-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-map-marker-alt text-medical-600 text-xl"></i>
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-16">
+                <div class="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10">
+                    <div class="space-y-6 sm:space-y-8">
+                        <div class="flex items-start space-x-4 sm:space-x-6">
+                            <div class="w-12 h-12 sm:w-16 sm:h-16 bg-medical-100 rounded-xl sm:rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-medical-600 text-lg sm:text-xl"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-medical-800 mb-3 text-lg">Corporate Address</h4>
-                                <p class="text-gray-600 leading-relaxed">
+                                <h4 class="font-bold text-medical-800 mb-2 sm:mb-3 text-base sm:text-lg">Corporate Address</h4>
+                                <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
                                     PT. Semesta Medika Makmur<br>
                                     Jl. Kamal Raya Outer Ring Road<br>
                                     Mutiara Taman Palem Blok A2 No 28<br>
@@ -439,34 +459,34 @@
                             </div>
                         </div>
                         
-                        <div class="flex items-start space-x-6">
-                            <div class="w-16 h-16 bg-medical-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-phone text-medical-600 text-xl"></i>
+                        <div class="flex items-start space-x-4 sm:space-x-6">
+                            <div class="w-12 h-12 sm:w-16 sm:h-16 bg-medical-100 rounded-xl sm:rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-medical-600 text-lg sm:text-xl"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-medical-800 mb-3 text-lg">Phone Numbers</h4>
-                                <div class="space-y-2 text-gray-600">
+                                <h4 class="font-bold text-medical-800 mb-2 sm:mb-3 text-base sm:text-lg">Phone Numbers</h4>
+                                <div class="space-y-2 text-gray-600 text-sm sm:text-base">
                                     <p>Sales: (021) 29517888</p>
                                     <p><i class="fab fa-whatsapp mr-2"></i>WhatsApp: 0811-1963-333</p>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="flex items-start space-x-6">
-                            <div class="w-16 h-16 bg-medical-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-envelope text-medical-600 text-xl"></i>
+                        <div class="flex items-start space-x-4 sm:space-x-6">
+                            <div class="w-12 h-12 sm:w-16 sm:h-16 bg-medical-100 rounded-xl sm:rounded-2xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-medical-600 text-lg sm:text-xl"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-medical-800 mb-3 text-lg">Email Contact</h4>
-                                <p class="text-gray-600 mb-2">semestamedikamakmur@gmail.com</p>
-                                <div class="flex space-x-4 mt-4">
-                                    <a href="https://wads-frontend-alpha.vercel.app/" class="bg-medical-100 text-medical-700 px-4 py-2 rounded-lg font-medium hover:bg-medical-200 transition-colors text-sm">
+                                <h4 class="font-bold text-medical-800 mb-2 sm:mb-3 text-base sm:text-lg">Email Contact</h4>
+                                <p class="text-gray-600 mb-2 text-sm sm:text-base">semestamedikamakmur@gmail.com</p>
+                                <div class="flex flex-wrap gap-3 mt-4">
+                                    <a href="https://wads-frontend-alpha.vercel.app/" class="bg-medical-100 text-medical-700 px-3 sm:px-4 py-2 rounded-lg font-medium hover:bg-medical-200 transition-colors text-xs sm:text-sm">
                                         <i class="fas fa-headset mr-2"></i>Support Portal
                                     </a>
-                                    <a href="https://semestamedika.com" class="bg-medical-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-medical-700 transition-colors text-sm">
+                                    <a href="https://semestamedika.com" class="bg-medical-600 text-white px-3 sm:px-4 py-2 rounded-lg font-medium hover:bg-medical-700 transition-colors text-xs sm:text-sm">
                                         <i class="fas fa-shopping-cart mr-2"></i>Online Store
                                     </a>
-                                    <a href="https://wa.link/ac4h96" class="bg-green-500 text-white px-4 py-2 rounded-lg font-medium hover:bg-green-600 transition-colors text-sm">
+                                    <a href="https://wa.link/ac4h96" class="bg-green-500 text-white px-3 sm:px-4 py-2 rounded-lg font-medium hover:bg-green-600 transition-colors text-xs sm:text-sm">
                                         <i class="fab fa-whatsapp mr-2"></i>WhatsApp
                                     </a>
                                 </div>
@@ -475,16 +495,15 @@
                     </div>
                 </div>
                 
-                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
+                <div class="bg-white rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl h-full min-h-[500px]">
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6666666666665!2d106.7333333!3d-6.1333333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f7e2b3c3c3c3%3A0x2e69f7e2b3c3c3c3!2sJl.%20Kamal%20Raya%20Outer%20Ring%20Road%2C%20Mutiara%20Taman%20Palem%20Blok%20A2%20No%2028%2C%20Cengkareng%2C%20Jakarta%20Barat%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1623333333333!5m2!1sen!2sid" 
                         width="100%" 
-                        height="450" 
+                        height="100%" 
                         style="border:0;" 
                         allowfullscreen="" 
                         loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"
-                        class="w-full h-full min-h-96">
+                        referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
             </div>
@@ -533,6 +552,11 @@
         </div>
     </footer>
 
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/628111963333" target="_blank" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-green-500 text-white w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300 z-50 flex items-center justify-center">
+        <i class="fab fa-whatsapp text-xl sm:text-2xl"></i>
+    </a>
+
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -558,6 +582,29 @@
                 header.classList.add('bg-white/90');
                 header.classList.remove('bg-white');
             }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        Array.from(mobileMenuLinks).forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
         });
     </script>
 </body>
